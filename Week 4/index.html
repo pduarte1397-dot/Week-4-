@@ -78,5 +78,89 @@
 
   <script src="script.js"></script>
 
+</body> 
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>HTML CSS JavaScript Example</title>
+
+    <!-- =========================
+         CSS
+         CSS controls how the page looks:
+         colors, size, spacing, fonts, etc.
+         ========================= -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: lightblue;
+            padding: 50px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HTML
+         HTML creates the structure/content
+         of the webpage.
+         ========================= -->
+
+    <h1 id="title">Hello World!</h1>
+
+    <p id="message">
+        This is an HTML, CSS, and JavaScript example.
+    </p>
+
+    <button onclick="changeText()">
+        Click Me
+    </button>
+
+
+    <!-- =========================
+         JAVASCRIPT
+         JavaScript makes the webpage
+         interactive and dynamic.
+         ========================= -->
+
+    <script>
+        function changeText() {
+
+            // Find the HTML element with id="title"
+            const title = document.getElementById("title");
+
+            // Change its text
+            title.innerHTML = "You clicked the button!";
+
+            // Find the paragraph
+            const message = document.getElementById("message");
+
+            // Change the paragraph
+            message.innerHTML = "JavaScript changed this text.";
+
+            // Change the background color using JavaScript
+            document.body.style.backgroundColor = "lightgreen";
+        }
+    </script>
+
 </body>
+</html>
 </html>
